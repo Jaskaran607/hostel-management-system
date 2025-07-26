@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">HostelHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hostels.html">Hostels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookings.html">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1>Find Your Perfect Student Accommodation</h1>
+            <p class="lead">Browse through our network of affordable and comfortable hostels</p>
+            <a href="hostels.html" class="btn btn-primary btn-lg">View Hostels</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-house-door"></i>
+                    </div>
+                    <h3>Quality Hostels</h3>
+                    <p>Carefully selected accommodations with all necessary amenities</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3>Safe Environment</h3>
+                    <p>24/7 security and CCTV surveillance for your peace of mind</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <h3>Affordable Prices</h3>
+                    <p>Budget-friendly options for students of all backgrounds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hostels Preview -->
+    <section class="hostels-preview bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Hostels</h2>
+            <div class="row">
+                <!-- Hostel Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card hostel-card">
+                        <img src="assets/img/hostel1.jpg" class="card-img-top" alt="Hostel Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Valley Hostel</h5>
+                            <p class="card-text">Located in the heart of the city with easy access to universities.</p>
+                            <div class="hostel-meta">
+                                <span class="badge bg-success">Available: 5 rooms</span>
+                                <span class="price">$120/month</span>
+                            </div>
+                            <a href="hostel-details.html" class="btn btn-primary mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hostel Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card hostel-card">
+                        <img src="assets/img/hostel2.jpg" class="card-img-top" alt="Hostel Image">
+                        <div class="card-body">
+                            <h5 class="card-title">University Heights</h5>
+                            <p class="card-text">Modern facilities just 10 minutes from campus.</p>
+                            <div class="hostel-meta">
+                                <span class="badge bg-warning text-dark">Limited: 2 rooms</span>
+                                <span class="price">$150/month</span>
+                            </div>
+                            <a href="hostel-details.html" class="btn btn-primary mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hostel Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card hostel-card">
+                        <img src="assets/img/hostel3.jpg" class="card-img-top" alt="Hostel Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Campus Lodge</h5>
+                            <p class="card-text">Quiet environment perfect for focused studying.</p>
+                            <div class="hostel-meta">
+                                <span class="badge bg-danger">Full</span>
+                                <span class="price">$100/month</span>
+                            </div>
+                            <a href="hostel-details.html" class="btn btn-primary mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="hostels.html" class="btn btn-outline-primary">View All Hostels</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About HostelHub</h5>
+                    <p>Providing quality student accommodation since 2010. Our mission is to make student living affordable and comfortable.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="hostels.html" class="text-white">Hostels</a></li>
+                        <li><a href="bookings.html" class="text-white">My Bookings</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <address>
+                        123 Campus Road<br>
+                        University Town<br>
+                        Phone: (123) 456-7890<br>
+                        Email: info@hostelhub.com
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 HostelHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
