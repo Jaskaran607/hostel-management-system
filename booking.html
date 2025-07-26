@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+</head>
+<body>
+    <!-- Same navigation as index.html -->
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card booking-card">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Book Your Room</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="booking-progress mb-4">
+                                <div class="progress-steps">
+                                    <div class="step active">
+                                        <span class="step-number">1</span>
+                                        <span class="step-title">Details</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-number">2</span>
+                                        <span class="step-title">Payment</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-number">3</span>
+                                        <span class="step-title">Confirmation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="mb-4">Hostel Information</h4>
+                            <div class="hostel-info mb-4 p-3 bg-light rounded">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="assets/img/hostel1.jpg" class="img-fluid rounded" alt="Hostel">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h5>Green Valley Hostel</h5>
+                                        <p class="text-muted mb-1">
+                                            <i class="bi bi-geo-alt"></i> 123 University Ave, Campus Town
+                                        </p>
+                                        <p class="mb-1">
+                                            <strong>Room:</strong> Double Occupancy (Room #204)
+                                        </p>
+                                        <p class="mb-1">
+                                            <strong>Price:</strong> $120/month
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form id="bookingForm">
+                                <h4 class="mb-4">Personal Information</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="address" class="form-label">Permanent Address</label>
+                                        <textarea class="form-control" id="address" rows="2"></textarea>
+                                    </div>
+                                </div>
+
+                                <h4 class="mt-5 mb-4">Booking Details</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="checkIn" class="form-label">Check-in Date</label>
+                                        <input type="date" class="form-control" id="checkIn" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="duration" class="form-label">Duration (months)</label>
+                                        <select class="form-select" id="duration" required>
+                                            <option value="1">1 Month</option>
+                                            <option value="3" selected>3 Months</option>
+                                            <option value="6">6 Months</option>
+                                            <option value="12">12 Months</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="idType" class="form-label">ID Proof Type</label>
+                                        <select class="form-select" id="idType" required>
+                                            <option value="">Select ID Type</option>
+                                            <option value="passport">Passport</option>
+                                            <option value="driver">Driver's License</option>
+                                            <option value="student">Student ID</option>
+                                            <option value="other">Other Government ID</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="idNumber" class="form-label">ID Number</label>
+                                        <input type="text" class="form-control" id="idNumber" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-check mt-4">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the <a href="#">Terms and Conditions</a>
+                                    </label>
+                                </div>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                    <button type="button" class="btn btn-outline-secondary me-md-2">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Continue to Payment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html -->
+</body>
+</html>
