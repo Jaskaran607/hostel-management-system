@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+</head>
+<body>
+    <!-- Same navigation as index.html -->
+
+    <main class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h1>Available Hostels</h1>
+                <div class="search-filter">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search hostels...">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Filter Sidebar -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Filters</h5>
+                        </div>
+                        <div class="card-body">
+                            <h6>Price Range</h6>
+                            <div class="mb-3">
+                                <label for="priceMin" class="form-label">Min: $<span id="priceMinValue">0</span></label>
+                                <input type="range" class="form-range" min="0" max="300" step="10" id="priceMin">
+                            </div>
+                            <div class="mb-3">
+                                <label for="priceMax" class="form-label">Max: $<span id="priceMaxValue">300</span></label>
+                                <input type="range" class="form-range" min="0" max="300" step="10" id="priceMax" value="300">
+                            </div>
+
+                            <h6 class="mt-4">Facilities</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="wifi">
+                                <label class="form-check-label" for="wifi">Wi-Fi</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="laundry">
+                                <label class="form-check-label" for="laundry">Laundry</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="kitchen">
+                                <label class="form-check-label" for="kitchen">Kitchen</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ac">
+                                <label class="form-check-label" for="ac">Air Conditioning</label>
+                            </div>
+
+                            <button class="btn btn-primary w-100 mt-3">Apply Filters</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hostel List -->
+                <div class="col-md-9">
+                    <div class="row">
+                        <!-- Repeat this card for each hostel -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card hostel-card h-100">
+                                <div class="badge-availability">Available</div>
+                                <img src="assets/img/hostel1.jpg" class="card-img-top" alt="Hostel Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Green Valley Hostel</h5>
+                                    <p class="card-text text-muted">
+                                        <i class="bi bi-geo-alt"></i> 123 University Ave, Campus Town
+                                    </p>
+                                    <div class="hostel-features mb-3">
+                                        <span class="badge bg-light text-dark me-1">
+                                            <i class="bi bi-wifi"></i> WiFi
+                                        </span>
+                                        <span class="badge bg-light text-dark me-1">
+                                            <i class="bi bi-droplet"></i> Laundry
+                                        </span>
+                                        <span class="badge bg-light text-dark">
+                                            <i class="bi bi-egg-fried"></i> Kitchen
+                                        </span>
+                                    </div>
+                                    <div class="hostel-meta d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="price">$120</span>
+                                            <span class="text-muted">/month</span>
+                                        </div>
+                                        <span class="capacity">
+                                            <i class="bi bi-people"></i> 2/4
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <a href="hostel-details.html" class="btn btn-primary w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more hostel cards here -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Hostel pagination" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html -->
+</body>
+</html>
